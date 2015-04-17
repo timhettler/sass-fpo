@@ -1,0 +1,10 @@
+{
+  "name": "sass-fpo",
+  "description": "Sass mixin to create CSS-Only placeholder images",
+  "tags": [
+    "sass",
+    "images",
+    "placeholder"
+  ],
+  "website": "https://github.com/timhettler/sass-fpo"
+}

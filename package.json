@@ -1,0 +1,24 @@
+{
+  "name": "sass-fpo",
+  "version": "1.0.0",
+  "description": "Sass mixin to create CSS-Only placeholder images",
+  "main": "src/sass/fpo.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timhettler/sass-fpo"
+  },
+  "keywords": [
+    "sass",
+    "images",
+    "placeholder"
+  ],
+  "author": "Tim Hettler <me+github@timhettler.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timhettler/sass-fpo/issues"
+  },
+  "homepage": "https://github.com/timhettler/sass-fpo"
+}
