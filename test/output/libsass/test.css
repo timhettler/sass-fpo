@@ -1,8 +1,8 @@
 .test--default-args {
   overflow: hidden;
   position: relative;
-  background-color: #87451c;
-  color: #78bae3; }
+  background-color: #d423cc;
+  color: #2bdc33; }
   .test--default-args:before {
     content: '';
     display: block;
