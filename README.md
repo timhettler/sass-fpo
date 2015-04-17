@@ -4,7 +4,7 @@ Create CSS-Only placeholder images. I'm using the term "FPO" (For Placement Only
 
 ## Demo
 
-[http://sassmeister.com/gist/14af5a6c73d723ad4715]()
+[http://sassmeister.com/gist/14af5a6c73d723ad4715](http://sassmeister.com/gist/14af5a6c73d723ad4715)
 
 ## Installation
 
@@ -33,6 +33,8 @@ Import sass-fpo into your stylesheet:
 ### Mixins
 
 #### fpo($args)
+
+Creates the FPO image. Takes three optional arguments:
 
 ###### color
 
