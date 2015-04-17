@@ -3,7 +3,7 @@
   position: relative;
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     padding-bottom: percentage($height-ratio);
   }

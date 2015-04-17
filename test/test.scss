@@ -1,0 +1,5 @@
+@import "fpo.scss";
+
+.test--default-args {
+  @include fpo();
+}

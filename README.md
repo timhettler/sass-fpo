@@ -11,7 +11,7 @@ Create CSS-Only placeholder images. I'm using the term "FPO" (For Placement Only
 Via Bower:
 
 ```
-bower install sass-fpo --save
+bower install sass-fpo --save-dev
 ```
 
 Or NPM:
