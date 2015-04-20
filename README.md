@@ -34,7 +34,7 @@ Import sass-fpo into your stylesheet:
 
 #### fpo($args)
 
-Creates the FPO image. Takes three optional arguments:
+Creates the FPO image. Takes one `Map` argument, that has three optional properties:
 
 ###### color
 

@@ -10,6 +10,9 @@
 *~
 *.sass-cache
 *.iml
+*.gem
+.bundle
+*.lock
 
 # Package folders
 node_modules
@@ -36,3 +39,4 @@ intermediate
 publish
 .idea
 build
+test/output
