@@ -32,7 +32,7 @@ Import sass-fpo into your stylesheet:
 
 ### Variables
 
-##### $fpo-warn
+#### $fpo-warn
 
 Type: `Boolean`
 

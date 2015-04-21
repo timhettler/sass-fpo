@@ -1,7 +1,7 @@
 {
   "name": "sass-fpo",
   "description": "Sass mixin to create CSS-Only placeholder images",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/timhettler/sass-fpo",
   "main": "src/sass/fpo.scss",
   "authors": [
