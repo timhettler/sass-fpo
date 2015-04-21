@@ -30,6 +30,14 @@ Import sass-fpo into your stylesheet:
 @import "sass-fpo/sass/fpo.scss";
 ```
 
+### Variables
+
+##### $fpo-warn
+
+Type: `Boolean`
+
+If true, warns you at compile time that FPO elements are being used in the project. Defaults to `true`.
+
 ### Mixins
 
 #### fpo($args)
