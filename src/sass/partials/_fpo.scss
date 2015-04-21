@@ -1,12 +1,13 @@
 @mixin fpo($args: ()) {
   $_defaults: (
+    ratio: 1,
     color: rgb(random(255), random(255), random(255)),
     font: bold 20px/1 sans-serif,
     text: 'FPO'
   );
   $params: map-merge($_defaults, $args);
 
-  @include ratioHeight(1);
+  @include ratioHeight(map-get($params, 'ratio'));
   background-color: map-get($params, 'color');
   color: invert(map-get($params, 'color'));
 

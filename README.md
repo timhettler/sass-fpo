@@ -34,7 +34,13 @@ Import sass-fpo into your stylesheet:
 
 #### fpo($args)
 
-Creates the FPO image. Takes one `Map` argument, that has three optional properties:
+Creates the FPO image. Takes one `Map` argument, that has four optional properties:
+
+###### ratio
+
+Type: `Number (Unitless)`
+
+The size of the height, in relation to the width. For example, `1` will set the height equal to the width and `0.5` will set the height to 50% or the width. Defaults to `1`.
 
 ###### color
 
