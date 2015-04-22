@@ -2,4 +2,4 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "sass", ">=3.3"
+gem "sass", ">=3.4"

@@ -70,4 +70,4 @@ The text to display in the FPO image. Defaults to `'FPO'`.
 
 ## Requirements
 
-This plug-in requires Ruby Sass >= 3.3 or LibSass >= 3.1. 
+This plug-in requires Ruby Sass >= 3.4 or LibSass >= 3.1. 
