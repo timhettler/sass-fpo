@@ -1,0 +1,86 @@
+@import '../node_modules/sass-true/sass/true';
+@import '../src/sass/fpo.scss';
+
+$true-terminal-output: true;
+
+@include test-module('CSS Placeholder (FPO)') {
+
+  @include test('ratioHeight') {
+    @include assert('Default arguments') {
+      @include input {
+        @include ratioHeight();
+      }
+
+      @include expect {
+        &:after {
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
+      }
+    }
+
+    @include assert('User supplied arguments') {
+      @include input {
+        @include ratioHeight(0.5);
+      }
+
+      @include expect {
+        &:after {
+          content: '';
+          display: block;
+          padding-bottom: 50%;
+        }
+      }
+    }
+  }
+
+  @include test('fpo') {
+    @include assert('Default arguments') {
+      @include input {
+        @include fpo((color:#000)); // Supplying color since we can't test random output
+      }
+
+      @include expect {
+        background-color: #000;
+        color: #fff;
+
+        &:after {
+          content: "FPO"; 
+          font: bold 20px/1 sans-serif; 
+          left: 50%; 
+          position: absolute; 
+          top: 50%; 
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    @include assert('User supplied arguments') {
+      @include input {
+        @include fpo((
+          ratio: 0.5,
+          color: #000,
+          font: 18/2 Helvetica,
+          text: 'TEST'
+        ));
+      }
+
+      @include expect {
+        background-color: #000;
+        color: #fff;
+
+        &:after {
+          content: "TEST"; 
+          font: 18/2 Helvetica; 
+          left: 50%; 
+          position: absolute; 
+          top: 50%; 
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+@include report();

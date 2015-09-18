@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (grunt) {
   // Loads in any grunt tasks in the package.json file
   require('load-grunt-tasks')(grunt);
@@ -13,31 +15,19 @@ module.exports = function (grunt) {
       test: ['test/output']
     },
 
-    libSass: {
-      options: {
-        includePaths: ['src/sass']
-      },
-      test: {
-        files: [{
-          expand: true,
-          cwd: 'test/',
-          src: ['test.scss'],
-          dest: 'test/output/libsass/',
-          ext: '.css'
-        }]
-      }
+    rubySass: { // test with Ruby version of Sass
+      test: 'mkdir -p test/output/rubySass && sass test/tests.scss test/output/rubySass/test.css --sourcemap=none'
     },
 
-    rubySass: {
-      test: 'mkdir -p test/output/rubySass && sass test/test.scss test/output/rubySass/test.css --sourcemap=none --load-path src/sass'
+    mochacli: { // uses LibSass
+      all: ['test/test_shim.js']
     }
   };
 
-  grunt.renameTask('sass', 'libSass');
   grunt.renameTask('exec', 'rubySass');
   grunt.initConfig(taskConfig);
 
-  grunt.registerTask('test', ['githooks', 'clean:test', 'libSass:test', 'rubySass:test']);
+  grunt.registerTask('test', ['githooks', 'clean:test', 'rubySass:test', 'mochacli']);
   grunt.registerTask('default', ['test']);
 
 };
