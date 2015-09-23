@@ -1,1 +1,16 @@
+/// Output a warning if an FPO element is being used
+/// @type Bool
 $fpo-warn: true !default;
+
+/// Default parameters for the fpo mixin.
+/// @type {Map}
+/// @prop {Number} ratio [1] - The height percentage (to be used by ratioHeight)
+/// @prop {Color} color [random] - The background color of the element
+/// @prop {List} font [bold 20px/1 sans-serif] The font property of the element
+/// @prop {String} text [FPO] The text to be displayed in the element
+$fpo-defaults: (
+  ratio: 1,
+  color: rgb(random(255), random(255), random(255)),
+  font: bold 20px/1 sans-serif,
+  text: 'FPO'
+) !default;

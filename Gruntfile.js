@@ -7,7 +7,7 @@ module.exports = function (grunt) {
   var taskConfig = {
     githooks: {
       all: {
-        'pre-commit': 'test',
+        'pre-commit': 'test sassdoc',
       }
     },
 
@@ -21,6 +21,10 @@ module.exports = function (grunt) {
 
     mochacli: { // uses LibSass
       all: ['test/test_shim.js']
+    },
+
+    sassdoc: {
+      src: 'src/sass/'
     }
   };
 
