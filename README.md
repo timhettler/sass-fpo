@@ -46,27 +46,27 @@ Creates the FPO image. Takes one `Map` argument, that has four optional properti
 
 ###### ratio
 
-Type: `Number (Unitless)`
+Type: `Number (Unitless)` [1]
 
-The size of the height, in relation to the width. For example, `1` will set the height equal to the width and `0.5` will set the height to 50% or the width. Defaults to `1`.
+The size of the height, in relation to the width. For example, `1` will set the height equal to the width and `0.5` will set the height to 50% or the width.
 
 ###### color
 
-Type: `Color`
+Type: `Color` [random]
 
-The background color of the FPO image. Defaults to a random color.
+The background color of the FPO image.
 
 ###### font
 
-Type: `List`
+Type: `List` ['bold 20px/1 sans-serif']
 
-The font property to use on the FPO text. Defaults to `bold 20px/1 sans-serif`.
+The font property to use on the FPO text.
 
 ###### text
 
-Type: `String`
+`String` ['FPO']
 
-The text to display in the FPO image. Defaults to `'FPO'`.
+The text to display in the FPO image.
 
 ## Requirements
 
