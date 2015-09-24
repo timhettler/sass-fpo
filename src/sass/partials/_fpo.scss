@@ -1,11 +1,8 @@
+/// Create a "for placement only" element
+/// @param {Map} $args - The mixin arguments
+/// @require {mixin} ratioHeight
 @mixin fpo($args: ()) {
-  $_defaults: (
-    ratio: 1,
-    color: rgb(random(255), random(255), random(255)),
-    font: bold 20px/1 sans-serif,
-    text: 'FPO'
-  );
-  $params: map-merge($_defaults, $args);
+  $params: map-merge($fpo-defaults, $args);
 
   @include ratioHeight(map-get($params, 'ratio'));
   background-color: map-get($params, 'color');
