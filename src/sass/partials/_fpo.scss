@@ -1,6 +1,7 @@
 /// Create a "for placement only" element
 /// @param {Map} $args - The mixin arguments
 /// @require {mixin} ratioHeight
+/// @output An element that maintains a set aspect ratio as it is resized
 @mixin fpo($args: ()) {
   $params: map-merge($fpo-defaults, $args);
 

@@ -1,6 +1,6 @@
 /// Set an element's height to a percentage of it's width.
 /// @param {Number} $height-ratio [1] - The height percentage
-/// @outputs An :after pseudo-element with padding-bottom equal to the $height-ratio percentage
+/// @output An :after pseudo-element with padding-bottom equal to the $height-ratio percentage
 @mixin ratioHeight ($height-ratio:1) {
   overflow: hidden;
   position: relative;
